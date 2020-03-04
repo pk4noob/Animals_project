@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font: 18px arial, sans-serif;
+    background: #eee;
+}
+#heyvan{
+    margin-right: 70px;
+}
+.img{
+    height: 3%;
+    width: 3%;
+    margin-top: 5%;
+}
+.strong{    
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;    
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img2{
+    width: 100%;
+    opacity: 0.8;
+    filter: blur(0.5px);
+    /* cursor: pointer; */
+    transition: 0.3s;
+    border-radius: 5px;
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+
+.img2:hover{
+    transform: scaleX(-1);
+    opacity: 1;
+}
+/* .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+} */
+  .head{
+    margin-bottom: 30px;
+}
+.yazi{
+    background-color: #3CB371;
+    width: 100%;
+    height: auto;
+}
+.strong2{
+    color: white;
+    margin-left: 20px;
+    font-family: "Tangerine", serif ;
+    
+
+}
+.strong2:visited{
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+.strong2:hover{
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.pp{
+    color: gray;
+    margin-left: 20px;
+    
+}
+.first{
+    width: 25%;
+}
+.second{
+    width: 25%;
+}
+.three{
+    width: 25%;
+}
+.second > div > div > div{
+    background-color: black;
+}
+.three > div >div > div {
+    background-color: #1E90FF;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #333;;
+    margin-top: 30px;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.849); */
+    color: white;
+    text-align: center;
+    
+}
+.container{
+    flex: 1;   
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+/* #umumi{
+    position: fixed;
+    width: 100%;
+    background-color: red;
+} */
+.pos-f-t    {
+    /* position: fixed; */
+    width: 100%;
+    background-color: #333;
+    /* top: 0; */
+    /* z-index: 10; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
+    */
+  /* .textt {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .div-div{
+    position: relative;
+    width: 50%;
+    height: 30%;
+  }
+  .div-div:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+   */
