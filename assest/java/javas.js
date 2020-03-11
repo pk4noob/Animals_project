@@ -242,7 +242,6 @@ if (form === null) {
 
 
 
-
 function allStorage(e) {
     $("#btnClick").click(function () {
         var data = $("#category_o").val()
