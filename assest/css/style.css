@@ -3,8 +3,9 @@
 }
 body{
     font: 18px arial, sans-serif;
-    background: #eee;
-    background-image: url("/home/orxan/Documents/REPOS/Proyek_heftelik/Image/heyvanlar.jpg");
+    /* background: rgb(238, 238, 238); */
+    background: -webkit-linear-gradient(left, #ffb3007e, #0400ff96);
+    /* background-image: url("/home/orxan/Documents/REPOS/Proyek_heftelik/Image/heyvanlar.jpg"); */
 }
 #heyvan{
     margin-right: 70px;
