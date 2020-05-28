@@ -199,4 +199,22 @@ footer{
         margin-top: 10%;
     }
 
+
+}
+@media only screen and (max-width: 499px){
+    .navbar{
+        display: flow-root !important;
+        flex-wrap: nowrap !important;
+    }
+    .container{
+        padding-top: 110px;
+    }
+    .strong{
+        color: palegreen;
+    }
+    .img {
+        height: 2%;
+        width: 10%;
+        margin-top: 5%;
+    }
 }
