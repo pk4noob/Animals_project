@@ -148,26 +148,17 @@
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li> -->
             <!-- </ul> -->
-            <!-- <form class="form-inline my-2 my-lg-0"> -->
-            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" id="input_data"
-                    aria-label="Search"> -->
-            <select id="category_o" class="form-control">
-                <option selected value="Choose">Choose...</option>
-                <option value="mammals">Mammals</option>
-                <option value="birds">Birds</option>
-                <option value="reptiles">Reptiles</option>
-                <option value="amphibians">Amphibians</option>
-                <option value="anvertebrates">Anvertebrates</option>
-                <option value="fish">Fish</option>
-            </select>
-            <button class="btn btn-outline-success my-2 my-sm-0" id="btnClick" pon type="submit">Search</button>
-            <!-- </form> -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 " type="search" id="search-input" onkeyup="searchData()"
+                    placeholder="Search" aria-label="Search">
+            </form>
     </div>
     </nav>
 
-    </div>
+
     <div class="container">
-        <div class="head">
+        <div id="accordion" class="fixed"></div>
+        <div class=" head">
             <img src="./Image/znak-222x300.jpg" alt="active" class="img"><strong class="strong">Animals</strong>
         </div>
         <div class="main">
@@ -330,6 +321,7 @@
 
 
                 </div>
+
 
 
                 <footer>

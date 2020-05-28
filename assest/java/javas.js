@@ -239,20 +239,55 @@ if (form === null) {
 
     })
 }
+function searchData(e) {
+    let searchValue = document.querySelector("#search-input").value
+    let dataLocalStorage = getStorage("animals")
+    let dataArr = [];
+    for (let property in dataLocalStorage) {
+        // console.log(dataLocalStorage[property])
+        dataLocalStorage[property].forEach(item => {
+            if (item.name.search(searchValue) !== -1) {
+                dataArr.push(item);
+            }
+        })
+    }
+    renderDOM(dataArr, searchValue);
+}
+
+function renderDOM(data, userValue) {
+    if (userValue == '') {
+        document.querySelector('#accordion').innerHTML = '';
+        return false
+    }
+    data.forEach((item, index) => {
+        document.querySelector('#accordion').innerHTML = `
+        <div class="card">
+            <div class="card-header" id="heading${index}">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">${index + 1}. 
+                ${item.name}
+                </button>
+            </h5>
+            </div>
+
+            <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#accordion">
+            <img src="${item.animalPic}">
+            <ul class="list-group">
+                <li class="list-group-item">Name: ${item.name}</li>
+                <li class="list-group-item">Diet: ${item.diet}</li>
+                <li class="list-group-item">Average Life: ${item.averageLife}</li>
+                <li class="list-group-item">Size: ${item.size}</li>
+                <li class="list-group-item">Weight: ${item.weight}</li>
+                <li class="list-group-item">About: ${item.about}</li>
+        </ul>
+        <img src="${item.livePic}"></img> 
+            </div>
+        </div>
+        `
+    });
+}
 
 
-
-function allStorage(e) {
-    $("#btnClick").click(function () {
-        var data = $("#category_o").val()
-        console.log(data)
-        for (var i = 0; i < localStorage.length; i++) {
-            var key = localStorage.key(i);
-            var item = JSON.parse(localStorage.getItem(key));
-            console.log(item[data]);
-
-        }
-    })
 
 
     // var values = [],
@@ -265,8 +300,6 @@ function allStorage(e) {
     // console.log(keys)
     // return values;
 
-}
-allStorage()
 
 
 // function myFunction() {
